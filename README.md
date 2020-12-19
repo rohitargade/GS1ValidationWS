@@ -1,1 +1,1 @@
-# GS1ValidationWS
+# validationWSGS1
