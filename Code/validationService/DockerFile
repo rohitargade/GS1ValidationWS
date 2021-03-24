@@ -1,4 +1,0 @@
-FROM openjdk:8
-ADD /target/validationWS-1.0.0-SNAPSHOT.jar validationWS.jar
-EXPOSE 8090
-ENTRYPOINT ["java", "-jar", "validationWS.jar"]
