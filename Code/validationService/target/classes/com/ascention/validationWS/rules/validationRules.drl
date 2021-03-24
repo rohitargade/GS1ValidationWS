@@ -1,0 +1,5 @@
+package com.ascention.validationWS.rules
+
+import com.ascention.validationWS.beans.*;
+
+rule "TEST-MULTIOBJ-LIST"	when		$productAdditionalArray : ProductAdditionalArray($lstProductAdditional : lstProductAdditional, eligibility )  		ProductAdditional( eligibility ) from $lstProductAdditional 		result: Result() then modify( $productAdditionalArray ){ setEligibility(false) } result.setOutput("{FAILED_TEST-MULTIOBJ-LIST_Dynamic:" + $productAdditionalArray.toString() + "}",1);  end	

@@ -1,0 +1,13 @@
+1. Create Bean
+2. Create DAO Interface
+3. Create Repo
+3a.Generate java class from XSD using right click --> Generate 
+4. Make the module class as XMLRootElement
+4a.Update package-info.java to generate required namespace
+5. Copy create methods to Object Factory
+6. Create Object Factory Object
+7. Create DAO Instance - Autowired in the controller which is @RestController annotated
+8. using this DAO instance call method in the repository [Implementation of interface]
+9. assign values to object using setter getter
+10.JAXB Marshaller to convert to XML to export
+11.Change DocumentCommandType class to contain required documentType objects so that while exporting namespaces it will be exported properly
